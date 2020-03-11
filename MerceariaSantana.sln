@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gerenciador", "MerceariaSantana\Gerenciador.csproj", "{2071115D-3E9D-4433-B7B6-A9CA0AAA3868}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nucleo", "Data\Nucleo.csproj", "{F982F4E0-7FFE-4D02-88D6-21016265344F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nucleo", "Nucleo\Nucleo.csproj", "{F982F4E0-7FFE-4D02-88D6-21016265344F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
