@@ -15,12 +15,12 @@ namespace MerceariaSantana
 {
     public partial class FormMenu : Form
     {
-        private readonly IUsuarioRepository _usuarioRepository = new UsuarioRepository();
-
+      
         public FormMenu()
         {
             InitializeComponent();
             EscondeBotoes();
+            AbrirFormNoPanel<FormLogin>();
         }
 
         private void EscondeBotoes()
@@ -28,7 +28,7 @@ namespace MerceariaSantana
             pnlAcoes.Hide();
         }
 
-        private void ExibeBotoes()
+        public void ExibeBotoes()
         {
             pnlAcoes.Show();
         }
@@ -61,33 +61,6 @@ namespace MerceariaSantana
         private void label2_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-         
-
-            if (txtUsuario.Text.ToUpper() == Usuario.Tipo.ADM.ToString()
-                    && UsuarioESenhaEstaOK())
-            {
-                lblSenhaInvalida.Hide();
-                pnlLogin.Hide();
-                ExibeBotoes();
-            }
-            else
-            {
-                EscondeBotoes();
-                lblSenhaInvalida.Show();
-            }
-           
-        }
-
-        private bool UsuarioESenhaEstaOK()
-        {
-            List<Usuario> listaUsuario = _usuarioRepository.ObterTodos();
-
-            return listaUsuario.Where(x => x.Login.ToUpper() == txtUsuario.Text.ToUpper()
-                                    && x.Senha == txtSenha.Text).ToList().Count > 0;
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)

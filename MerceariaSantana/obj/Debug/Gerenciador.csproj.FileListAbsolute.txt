@@ -34,3 +34,4 @@ C:\Users\paulo.santana\source\repos\MerceariaSantana\MerceariaSantana\obj\Debug\
 C:\Users\paulo.santana\source\repos\MerceariaSantana\MerceariaSantana\bin\Debug\Nucleo.dll
 C:\Users\paulo.santana\source\repos\MerceariaSantana\MerceariaSantana\bin\Debug\Nucleo.pdb
 C:\Users\paulo.santana\source\repos\MerceariaSantana\MerceariaSantana\bin\Debug\Nucleo.dll.config
+C:\Users\paulo.santana\source\repos\MerceariaSantana\MerceariaSantana\obj\Debug\MerceariaSantana.FormLogin.resources
