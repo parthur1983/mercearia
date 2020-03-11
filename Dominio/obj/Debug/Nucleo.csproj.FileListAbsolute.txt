@@ -1,3 +1,0 @@
-C:\Users\paulo.santana\source\repos\MerceariaSantana\Dominio\obj\Debug\Nucleo.csproj.CoreCompileInputs.cache
-C:\Users\paulo.santana\source\repos\MerceariaSantana\Dominio\obj\Debug\Dominio.dll
-C:\Users\paulo.santana\source\repos\MerceariaSantana\Dominio\obj\Debug\Dominio.pdb

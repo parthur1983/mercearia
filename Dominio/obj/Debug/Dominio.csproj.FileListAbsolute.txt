@@ -1,6 +1,0 @@
-C:\Users\paulo.santana\source\repos\MerceariaSantana\Dominio\bin\Debug\Dominio.dll.config
-C:\Users\paulo.santana\source\repos\MerceariaSantana\Dominio\bin\Debug\Dominio.dll
-C:\Users\paulo.santana\source\repos\MerceariaSantana\Dominio\bin\Debug\Dominio.pdb
-C:\Users\paulo.santana\source\repos\MerceariaSantana\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
-C:\Users\paulo.santana\source\repos\MerceariaSantana\Dominio\obj\Debug\Dominio.dll
-C:\Users\paulo.santana\source\repos\MerceariaSantana\Dominio\obj\Debug\Dominio.pdb
