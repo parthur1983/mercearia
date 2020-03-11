@@ -1,0 +1,6 @@
+C:\Users\paulo.santana\source\repos\MerceariaSantana\Dominio\obj\Release\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\paulo.santana\source\repos\MerceariaSantana\Dominio\bin\Release\Dominio.dll.config
+C:\Users\paulo.santana\source\repos\MerceariaSantana\Dominio\bin\Release\Dominio.dll
+C:\Users\paulo.santana\source\repos\MerceariaSantana\Dominio\bin\Release\Dominio.pdb
+C:\Users\paulo.santana\source\repos\MerceariaSantana\Dominio\obj\Release\Dominio.dll
+C:\Users\paulo.santana\source\repos\MerceariaSantana\Dominio\obj\Release\Dominio.pdb

@@ -1,0 +1,11 @@
+C:\Users\paulo.santana\source\repos\MerceariaSantana\MerceariaSantana\bin\Release\MerceariaSantana.exe.config
+C:\Users\paulo.santana\source\repos\MerceariaSantana\MerceariaSantana\bin\Release\MerceariaSantana.exe
+C:\Users\paulo.santana\source\repos\MerceariaSantana\MerceariaSantana\bin\Release\MerceariaSantana.pdb
+C:\Users\paulo.santana\source\repos\MerceariaSantana\MerceariaSantana\obj\Release\MerceariaSantana.FormLogin.resources
+C:\Users\paulo.santana\source\repos\MerceariaSantana\MerceariaSantana\obj\Release\MerceariaSantana.FormMenu.resources
+C:\Users\paulo.santana\source\repos\MerceariaSantana\MerceariaSantana\obj\Release\MerceariaSantana.Properties.Resources.resources
+C:\Users\paulo.santana\source\repos\MerceariaSantana\MerceariaSantana\obj\Release\MerceariaSantana.csproj.GenerateResource.cache
+C:\Users\paulo.santana\source\repos\MerceariaSantana\MerceariaSantana\obj\Release\MerceariaSantana.csproj.CoreCompileInputs.cache
+C:\Users\paulo.santana\source\repos\MerceariaSantana\MerceariaSantana\obj\Release\MerceariaSantana.exe
+C:\Users\paulo.santana\source\repos\MerceariaSantana\MerceariaSantana\obj\Release\MerceariaSantana.pdb
+C:\Users\paulo.santana\source\repos\MerceariaSantana\MerceariaSantana\obj\Release\MerceariaSantana.csprojAssemblyReference.cache
