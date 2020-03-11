@@ -1,4 +1,4 @@
-﻿using Nucleo.Config;
+﻿using Nucleo.Infra;
 using Nucleo.Modelo;
 using NHibernate;
 using System;

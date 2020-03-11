@@ -1,4 +1,5 @@
-﻿using Nucleo.Modelo;
+﻿using Nucleo.Infra;
+using Nucleo.Modelo;
 using Nucleo.Repository;
 using System;
 using System.Collections.Generic;
@@ -29,12 +30,9 @@ namespace MerceariaSantana
             {
                 lblSenhaInvalida.Hide();
                 this.Close();
-                //((FormMenu)this.ParentForm).ExibeBotoes();
-                //ExibeBotoes();
             }
             else
             {
-                //EscondeBotoes();
                 lblSenhaInvalida.Show();
             }
 
@@ -44,8 +42,10 @@ namespace MerceariaSantana
         {
             List<Usuario> listaUsuario = _usuarioRepository.ObterTodos();
 
+            string senhaCriptografada = Criptografia.ON(txtSenha.Text);
+
             return listaUsuario.Where(x => x.Login.ToUpper() == txtUsuario.Text.ToUpper()
-                                    && x.Senha == txtSenha.Text).ToList().Count > 0;
+                                    && x.Senha == senhaCriptografada).ToList().Count > 0;
         }
 
     }

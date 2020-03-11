@@ -70,7 +70,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Compile Include="Config\HibernateSession.cs" />
+    <Compile Include="Infra\Criptografia.cs" />
+    <Compile Include="Infra\HibernateSession.cs" />
     <Compile Include="Map\UsuarioMap.cs" />
     <Compile Include="Modelo\Usuario.cs" />
     <Compile Include="Repository\UsuarioRepository.cs" />

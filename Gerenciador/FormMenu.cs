@@ -28,11 +28,6 @@ namespace MerceariaSantana
             pnlAcoes.Hide();
         }
 
-        public void ExibeBotoes()
-        {
-            pnlAcoes.Show();
-        }
-
         private void panelCabecalho_Paint(object sender, PaintEventArgs e)
         {
 
@@ -84,6 +79,8 @@ namespace MerceariaSantana
 
                 pnlConteudo.Controls.Add(formulario);
                 pnlConteudo.Tag = formulario;
+
+                formulario.FormClosed += new FormClosedEventHandler(ExibeBotoes);
                 formulario.Show();
                 formulario.BringToFront();
             }
@@ -97,6 +94,11 @@ namespace MerceariaSantana
                 formulario.BringToFront();
             }
 
+        }
+
+        private void ExibeBotoes(object sender, FormClosedEventArgs e)
+        {
+            pnlAcoes.Show();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Nucleo.Infra;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,8 +26,8 @@ namespace Nucleo.Modelo
         {
             List<Usuario> lista = new List<Usuario>
             {
-                new Usuario { Login = "ADM", Senha = "8839" },
-                new Usuario { Login = "VENDEDOR", Senha = "0226" }
+                new Usuario { Login = "ADM", Senha = Criptografia.ON("8839") },
+                new Usuario { Login = "VENDEDOR", Senha = Criptografia.ON("0226") }
             };
 
             return lista;
