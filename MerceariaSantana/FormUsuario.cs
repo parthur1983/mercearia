@@ -24,5 +24,10 @@ namespace MerceariaSantana
         {
 
         }
+
+        private void dgUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

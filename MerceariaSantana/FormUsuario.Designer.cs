@@ -48,6 +48,7 @@
             this.dgUsuarios.Name = "dgUsuarios";
             this.dgUsuarios.Size = new System.Drawing.Size(691, 389);
             this.dgUsuarios.TabIndex = 0;
+            this.dgUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgUsuarios_CellContentClick);
             // 
             // pnlTitulo
             // 
