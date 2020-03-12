@@ -72,7 +72,10 @@ namespace MerceariaSantana
 
         private void AtualizaListagem(object sender, FormClosedEventArgs e)
         {
+            dgUsuarios.DataSource = null;
+            
             dgUsuarios.DataSource = _produtoRepository.ObterTodos();
+            dgUsuarios.Update();
             dgUsuarios.Refresh();
         }
 

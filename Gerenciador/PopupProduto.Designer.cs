@@ -170,7 +170,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnLogin);
             this.Name = "PopupProduto";
-            this.Text = "Cadastro de Usuário";
+            this.Text = "Cadastro de Produto";
             this.ResumeLayout(false);
             this.PerformLayout();
 

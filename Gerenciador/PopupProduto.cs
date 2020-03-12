@@ -17,6 +17,7 @@ namespace MerceariaSantana
     {
         public static Produto ProdutoSelecionado { get; set; }
         private readonly IProdutoRepository _produtoRepository = new ProdutoRepository();
+        private readonly IHistoricoPrecoRepository _hpRepository = new HistoricoPrecoRepository();
 
         public PopupProduto()
         {
@@ -56,6 +57,8 @@ namespace MerceariaSantana
             {
                 _produtoRepository.Salvar(p);
 
+                RegistrarHistorico(p);
+
                 lblSenhaInvalida.Hide();
 
                 MessageBox.Show("Operação realizada com sucesso.");
@@ -67,6 +70,17 @@ namespace MerceariaSantana
                 lblSenhaInvalida.Text = mensagem;
                 lblSenhaInvalida.Show();
             }
+
+        }
+
+        private void RegistrarHistorico(Produto p)
+        {
+            HistoricoPreco historicoPreco = new HistoricoPreco();
+            historicoPreco.Preco = p.Preco;
+            historicoPreco.Produto = p;
+            historicoPreco.Data = DateTime.Now;
+
+            _hpRepository.Salvar(historicoPreco);
 
         }
 
