@@ -41,4 +41,3 @@ C:\Users\paulo.santana\source\repos\MerceariaSantana\Nucleo\bin\Debug\Nucleo.dll
 C:\Users\paulo.santana\source\repos\MerceariaSantana\Nucleo\bin\Debug\Nucleo.pdb
 C:\Users\paulo.santana\source\repos\MerceariaSantana\Nucleo\obj\Debug\Nucleo.dll
 C:\Users\paulo.santana\source\repos\MerceariaSantana\Nucleo\obj\Debug\Nucleo.pdb
-C:\Users\paulo.santana\source\repos\MerceariaSantana\Nucleo\obj\Debug\Nucleo.csprojAssemblyReference.cache

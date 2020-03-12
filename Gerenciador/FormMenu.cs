@@ -40,7 +40,7 @@ namespace MerceariaSantana
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            AbrirFormNoPanel<FormProduto>();
         }
 
         private void button2_Click(object sender, EventArgs e)

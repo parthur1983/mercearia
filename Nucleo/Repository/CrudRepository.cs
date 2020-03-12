@@ -17,6 +17,7 @@ namespace Nucleo.Repository
         void Excluir(T obj);
         T ObterPor(int id);
         List<T> ObterTodos();
+        void Clear();
     }
 
     public class CrudRepository<T> : ICrudRepository<T> where T : class
@@ -50,6 +51,12 @@ namespace Nucleo.Repository
         public List<T> ObterTodos()
         {
             return _session.Query<T>().ToList();
+        }
+
+        public void Clear()
+        {
+            _session.Clear();
+            _session.Flush();
         }
     }
 }

@@ -73,3 +73,5 @@ C:\Users\paulo.santana\source\repos\MerceariaSantana\Gerenciador\obj\Debug\Geren
 C:\Users\paulo.santana\source\repos\MerceariaSantana\Gerenciador\obj\Debug\MerceariaSantana.exe
 C:\Users\paulo.santana\source\repos\MerceariaSantana\Gerenciador\obj\Debug\MerceariaSantana.pdb
 C:\Users\paulo.santana\source\repos\MerceariaSantana\Gerenciador\obj\Debug\MerceariaSantana.PopupUsuario.resources
+C:\Users\paulo.santana\source\repos\MerceariaSantana\Gerenciador\obj\Debug\MerceariaSantana.FormProduto.resources
+C:\Users\paulo.santana\source\repos\MerceariaSantana\Gerenciador\obj\Debug\MerceariaSantana.PopupProduto.resources
