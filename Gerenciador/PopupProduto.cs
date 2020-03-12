@@ -48,13 +48,15 @@ namespace MerceariaSantana
 
             Produto p = PopupProduto.ProdutoSelecionado;
             p.Descricao = txtDescricao.Text;
-            p.Preco = decimal.Parse(txtPreco.Text.Replace(".",","));
+            
             p.Observacao = txtObservacao.Text;
 
             string mensagem = Validacao(p);
 
             if (mensagem == "")
             {
+                p.Preco = decimal.Parse(txtPreco.Text.Replace(".", ","));
+
                 _produtoRepository.Salvar(p);
 
                 RegistrarHistorico(p);
@@ -94,6 +96,13 @@ namespace MerceariaSantana
             if (txtPreco.Text == "" || txtPreco.Text=="0" )
             {
                 return "Preço obrigatório";
+            }
+
+            var Result = decimal.TryParse(txtPreco.Text, out decimal preço);
+
+            if (!Result)
+            {
+                return "Preço inválido";
             }
 
             List<Produto> produtoBanco = _produtoRepository.ObterTodos()

@@ -15,6 +15,8 @@ namespace MerceariaSantana
     public partial class FormProduto : Form
     {
         private readonly IProdutoRepository _produtoRepository = new ProdutoRepository();
+        private bool sortAscending = false;
+
         public FormProduto()
         {
             InitializeComponent();
@@ -130,6 +132,18 @@ namespace MerceariaSantana
 
             dgUsuarios.Update();
             dgUsuarios.Refresh();
+        }
+
+        private void dgUsuarios_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            //List<Produto> list = _produtoRepository.ObterTodos();
+
+            //if (sortAscending)
+            //    dgUsuarios.DataSource = list.OrderBy(x=> dgUsuarios.Columns[e.ColumnIndex].DataPropertyName).ToList();
+            //else
+            //    dgUsuarios.DataSource = list.OrderBy(x => dgUsuarios.Columns[e.ColumnIndex].DataPropertyName).Reverse().ToList();
+
+            //sortAscending = !sortAscending;
         }
     }
 }
