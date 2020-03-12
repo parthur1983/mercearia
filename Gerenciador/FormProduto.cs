@@ -72,11 +72,7 @@ namespace MerceariaSantana
 
         private void AtualizaListagem(object sender, FormClosedEventArgs e)
         {
-            dgUsuarios.DataSource = null;
-            
-            dgUsuarios.DataSource = _produtoRepository.ObterTodos();
-            dgUsuarios.Update();
-            dgUsuarios.Refresh();
+            AtualizaListagem();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -99,7 +95,7 @@ namespace MerceariaSantana
                     {
                         _produtoRepository.Excluir(produtoSelecionado);
 
-                        AtualizaListagem(null, null);
+                        AtualizaListagem();
 
                         MessageBox.Show("Operação realizada com sucesso.");
                     }
@@ -111,6 +107,29 @@ namespace MerceariaSantana
 
                 
             }
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            AtualizaListagem();
+        }
+
+        private void AtualizaListagem()
+        {
+            if (txtPesquisa.Text == "")
+            {
+                dgUsuarios.DataSource = _produtoRepository.ObterTodos();
+            }
+            else
+            {
+                dgUsuarios.DataSource = _produtoRepository.ObterTodos().Where
+                    ( x=> x.Descricao.ToUpper().Contains(txtPesquisa.Text.ToUpper())).ToList();
+            }
+
+            dgUsuarios.ClearSelection();
+
+            dgUsuarios.Update();
+            dgUsuarios.Refresh();
         }
     }
 }

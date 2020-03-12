@@ -77,7 +77,7 @@ namespace MerceariaSantana
         {
             HistoricoPreco historicoPreco = new HistoricoPreco();
             historicoPreco.Preco = p.Preco;
-            historicoPreco.Produto = p;
+            historicoPreco.IdProduto = p.Id;
             historicoPreco.Data = DateTime.Now;
 
             _hpRepository.Salvar(historicoPreco);
