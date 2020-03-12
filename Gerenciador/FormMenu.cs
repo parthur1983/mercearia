@@ -63,6 +63,11 @@ namespace MerceariaSantana
             AbrirFormNoPanel<FormUsuario>();
         }
 
+        private void btnPrecos_Click(object sender, EventArgs e)
+        {
+            AbrirFormNoPanel<FormHistoricoPrecos>();
+        }
+
         private void AbrirFormNoPanel<Forms>() where Forms: Form, new()
         {
             Form formulario;
@@ -100,5 +105,7 @@ namespace MerceariaSantana
         {
             pnlAcoes.Show();
         }
+
+        
     }
 }

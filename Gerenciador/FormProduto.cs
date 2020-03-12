@@ -15,12 +15,11 @@ namespace MerceariaSantana
     public partial class FormProduto : Form
     {
         private readonly IProdutoRepository _produtoRepository = new ProdutoRepository();
-        private bool sortAscending = false;
 
         public FormProduto()
         {
             InitializeComponent();
-            dgUsuarios.DataSource = _produtoRepository.ObterTodos();
+            AtualizaListagem();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -132,6 +131,9 @@ namespace MerceariaSantana
 
             dgUsuarios.Update();
             dgUsuarios.Refresh();
+
+            dgUsuarios.Columns["Preco"].Visible = false;
+            dgUsuarios.Columns["PrecoFormatado"].HeaderText = "Preço";
         }
 
         private void dgUsuarios_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)

@@ -36,7 +36,7 @@
             this.btnUsuarios = new System.Windows.Forms.Button();
             this.btnProdutos = new System.Windows.Forms.Button();
             this.btnVendas = new System.Windows.Forms.Button();
-            this.btnRelatorios = new System.Windows.Forms.Button();
+            this.btnPrecos = new System.Windows.Forms.Button();
             this.btnBackup = new System.Windows.Forms.Button();
             this.pnlConteudo = new System.Windows.Forms.Panel();
             this.panelCabecalho.SuspendLayout();
@@ -101,11 +101,11 @@
             this.pnlAcoes.Controls.Add(this.btnUsuarios);
             this.pnlAcoes.Controls.Add(this.btnProdutos);
             this.pnlAcoes.Controls.Add(this.btnVendas);
-            this.pnlAcoes.Controls.Add(this.btnRelatorios);
+            this.pnlAcoes.Controls.Add(this.btnPrecos);
             this.pnlAcoes.Controls.Add(this.btnBackup);
             this.pnlAcoes.Location = new System.Drawing.Point(3, 18);
             this.pnlAcoes.Name = "pnlAcoes";
-            this.pnlAcoes.Size = new System.Drawing.Size(158, 243);
+            this.pnlAcoes.Size = new System.Drawing.Size(158, 522);
             this.pnlAcoes.TabIndex = 6;
             // 
             // btnUsuarios
@@ -117,7 +117,7 @@
             this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsuarios.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold);
             this.btnUsuarios.ForeColor = System.Drawing.Color.White;
-            this.btnUsuarios.Location = new System.Drawing.Point(9, 184);
+            this.btnUsuarios.Location = new System.Drawing.Point(9, 174);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(135, 40);
             this.btnUsuarios.TabIndex = 5;
@@ -159,21 +159,22 @@
             this.btnVendas.UseVisualStyleBackColor = true;
             this.btnVendas.Click += new System.EventHandler(this.button2_Click);
             // 
-            // btnRelatorios
+            // btnPrecos
             // 
-            this.btnRelatorios.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnRelatorios.FlatAppearance.BorderSize = 0;
-            this.btnRelatorios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnRelatorios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleGoldenrod;
-            this.btnRelatorios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRelatorios.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold);
-            this.btnRelatorios.ForeColor = System.Drawing.Color.White;
-            this.btnRelatorios.Location = new System.Drawing.Point(9, 92);
-            this.btnRelatorios.Name = "btnRelatorios";
-            this.btnRelatorios.Size = new System.Drawing.Size(135, 40);
-            this.btnRelatorios.TabIndex = 2;
-            this.btnRelatorios.Text = "RELATÓRIO";
-            this.btnRelatorios.UseVisualStyleBackColor = true;
+            this.btnPrecos.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnPrecos.FlatAppearance.BorderSize = 0;
+            this.btnPrecos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnPrecos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleGoldenrod;
+            this.btnPrecos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrecos.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold);
+            this.btnPrecos.ForeColor = System.Drawing.Color.White;
+            this.btnPrecos.Location = new System.Drawing.Point(3, 92);
+            this.btnPrecos.Name = "btnPrecos";
+            this.btnPrecos.Size = new System.Drawing.Size(152, 30);
+            this.btnPrecos.TabIndex = 2;
+            this.btnPrecos.Text = "RELAT. PREÇOS";
+            this.btnPrecos.UseVisualStyleBackColor = true;
+            this.btnPrecos.Click += new System.EventHandler(this.btnPrecos_Click);
             // 
             // btnBackup
             // 
@@ -184,7 +185,7 @@
             this.btnBackup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBackup.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold);
             this.btnBackup.ForeColor = System.Drawing.Color.White;
-            this.btnBackup.Location = new System.Drawing.Point(9, 138);
+            this.btnBackup.Location = new System.Drawing.Point(9, 128);
             this.btnBackup.Name = "btnBackup";
             this.btnBackup.Size = new System.Drawing.Size(135, 40);
             this.btnBackup.TabIndex = 3;
@@ -232,7 +233,7 @@
         private System.Windows.Forms.Button btnProdutos;
         private System.Windows.Forms.Button btnVendas;
         private System.Windows.Forms.Panel pnlConteudo;
-        private System.Windows.Forms.Button btnRelatorios;
+        private System.Windows.Forms.Button btnPrecos;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnBackup;
         private System.Windows.Forms.Button btnUsuarios;

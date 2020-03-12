@@ -63,6 +63,7 @@
             this.dgUsuarios.MultiSelect = false;
             this.dgUsuarios.Name = "dgUsuarios";
             this.dgUsuarios.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dgUsuarios.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.dgUsuarios.Size = new System.Drawing.Size(691, 354);
             this.dgUsuarios.TabIndex = 0;
             this.dgUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgUsuarios_CellContentClick);
