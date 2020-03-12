@@ -21,14 +21,14 @@ namespace Nucleo.Modelo
         public virtual string Login { get; set; }
         public virtual string Senha { get; set; }
 
-        public static string SenhaReset = "ch4v3123";
+        public static string SenhaReset = "12345678";
 
         public static List<Usuario> ListaUsuarios()
         {
             List<Usuario> lista = new List<Usuario>
             {
-                new Usuario { Login = "ADM", Senha = Criptografia.ON("8839") },
-                new Usuario { Login = "VENDEDOR", Senha = Criptografia.ON("0226") }
+                new Usuario { Login = "ADM", Senha = Criptografia.ON("1234") },
+                new Usuario { Login = "VENDEDOR", Senha = Criptografia.ON("5678") }
             };
 
             return lista;
