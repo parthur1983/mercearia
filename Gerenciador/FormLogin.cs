@@ -25,17 +25,37 @@ namespace MerceariaSantana
         private void btnLogin_Click(object sender, EventArgs e)
         {
 
+            lblSenhaInvalida.Text = "Senha inválida";
+
             if (txtUsuario.Text.ToUpper() == Usuario.Tipo.ADM.ToString()
                     && UsuarioESenhaEstaOK())
             {
                 lblSenhaInvalida.Hide();
                 this.Close();
+            }else if (txtUsuario.Text.ToUpper() == Usuario.Tipo.ADM.ToString()
+                                && IsSenhaReset())
+            {
+                ResetaSenhaUsuarios();
             }
             else
             {
                 lblSenhaInvalida.Show();
             }
 
+        }
+
+        private void ResetaSenhaUsuarios()
+        {
+            List<Usuario> listaUsuario = _usuarioRepository.ObterTodos();
+            listaUsuario[0].Senha = Usuario.ListaUsuarios()[0].Senha;
+            listaUsuario[1].Senha = Usuario.ListaUsuarios()[1].Senha;
+
+            _usuarioRepository.Salvar(listaUsuario[0]);
+            _usuarioRepository.Salvar(listaUsuario[1]);
+
+            lblSenhaInvalida.Text = "As senhas foram resetadas";
+
+            lblSenhaInvalida.Show();
         }
 
         private bool UsuarioESenhaEstaOK()
@@ -46,6 +66,11 @@ namespace MerceariaSantana
 
             return listaUsuario.Where(x => x.Login.ToUpper() == txtUsuario.Text.ToUpper()
                                     && x.Senha == senhaCriptografada).ToList().Count > 0;
+        }
+
+        private bool IsSenhaReset()
+        {
+             return txtSenha.Text==Usuario.SenhaReset;
         }
 
     }

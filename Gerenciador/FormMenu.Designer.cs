@@ -46,12 +46,12 @@
             // 
             // panelCabecalho
             // 
-            this.panelCabecalho.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.panelCabecalho.BackColor = System.Drawing.Color.Orange;
             this.panelCabecalho.Controls.Add(this.label1);
             this.panelCabecalho.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelCabecalho.Location = new System.Drawing.Point(0, 0);
             this.panelCabecalho.Name = "panelCabecalho";
-            this.panelCabecalho.Size = new System.Drawing.Size(800, 41);
+            this.panelCabecalho.Size = new System.Drawing.Size(1001, 41);
             this.panelCabecalho.TabIndex = 0;
             this.panelCabecalho.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCabecalho_Paint);
             // 
@@ -60,7 +60,7 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(516, 9);
+            this.label1.Location = new System.Drawing.Point(717, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(272, 22);
             this.label1.TabIndex = 0;
@@ -75,7 +75,7 @@
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 41);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(167, 409);
+            this.pnlMenu.Size = new System.Drawing.Size(167, 598);
             this.pnlMenu.TabIndex = 1;
             // 
             // button3
@@ -88,7 +88,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(12, 357);
+            this.button3.Location = new System.Drawing.Point(12, 546);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(135, 40);
             this.button3.TabIndex = 4;
@@ -201,14 +201,14 @@
             this.pnlConteudo.Location = new System.Drawing.Point(167, 41);
             this.pnlConteudo.Name = "pnlConteudo";
             this.pnlConteudo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.pnlConteudo.Size = new System.Drawing.Size(633, 409);
+            this.pnlConteudo.Size = new System.Drawing.Size(834, 598);
             this.pnlConteudo.TabIndex = 2;
             // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1001, 639);
             this.Controls.Add(this.pnlConteudo);
             this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.panelCabecalho);

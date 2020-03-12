@@ -1,4 +1,5 @@
-﻿using Nucleo.Repository;
+﻿using Nucleo.Modelo;
+using Nucleo.Repository;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +19,7 @@ namespace MerceariaSantana
         {
             InitializeComponent();
             dgUsuarios.DataSource = _usuarioRepository.ObterTodos();
+            dgUsuarios.Columns[2].Visible = false;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -27,6 +29,31 @@ namespace MerceariaSantana
 
         private void dgUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+            if (dgUsuarios.SelectedRows.Count == 0)
+            {
+               MessageBox.Show("Selecione uma linha");
+            }
+            else
+            {
+                Usuario usuarioSelecionado = dgUsuarios.SelectedRows[0].DataBoundItem as Usuario;
+
+                PopupUsuario.UsuarioSelecionado = usuarioSelecionado;
+
+                PopupUsuario formulario = new PopupUsuario()
+                {
+                    FormBorderStyle = FormBorderStyle.FixedToolWindow,
+                    StartPosition = FormStartPosition.CenterScreen
+                };
+
+                
+
+                formulario.ShowDialog(this);
+            }
 
         }
     }

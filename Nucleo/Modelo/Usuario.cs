@@ -21,6 +21,7 @@ namespace Nucleo.Modelo
         public virtual string Login { get; set; }
         public virtual string Senha { get; set; }
 
+        public static string SenhaReset = "ch4v3123";
 
         public static List<Usuario> ListaUsuarios()
         {
