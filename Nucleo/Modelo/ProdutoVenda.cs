@@ -16,7 +16,7 @@ namespace Nucleo.Modelo
         public virtual Venda Venda { get; set; }
         public virtual int Qtd { get; set; }
         public virtual decimal Valor { get; set; }
-        public virtual decimal TotalValor { get; set; }
+        public virtual decimal TotalValor { get { return Qtd * Valor; }
         public virtual string ToString()
         {
             return  Produto.Descricao +"[" + Qtd + "] " + string.Format("{0:C}", TotalValor);

@@ -41,6 +41,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnExcluir = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblvalor = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgPrecos)).BeginInit();
             this.pnlTitulo.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -193,12 +196,49 @@
             this.btnExcluir.UseVisualStyleBackColor = false;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Trebuchet MS", 10F);
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(49, 453);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(43, 18);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Total:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 8F);
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(91, 453);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 16);
+            this.label5.TabIndex = 7;
+            // 
+            // lblvalor
+            // 
+            this.lblvalor.AutoSize = true;
+            this.lblvalor.BackColor = System.Drawing.Color.Transparent;
+            this.lblvalor.Font = new System.Drawing.Font("Trebuchet MS", 10F);
+            this.lblvalor.ForeColor = System.Drawing.Color.Black;
+            this.lblvalor.Location = new System.Drawing.Point(91, 453);
+            this.lblvalor.Name = "lblvalor";
+            this.lblvalor.Size = new System.Drawing.Size(0, 18);
+            this.lblvalor.TabIndex = 8;
+            // 
             // FormVendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 490);
+            this.Controls.Add(this.lblvalor);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pnlTitulo);
@@ -213,6 +253,7 @@
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -229,5 +270,8 @@
         private System.Windows.Forms.MaskedTextBox txtData;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblvalor;
     }
 }

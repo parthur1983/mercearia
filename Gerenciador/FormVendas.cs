@@ -75,6 +75,8 @@ namespace MerceariaSantana
                          )
                    ).OrderByDescending(x => x.Data).ToList();
 
+            //lblvalor.Text = listhistorico.Sum(x => x.);
+
             dgPrecos.DataSource = listhistorico;
         }
 
