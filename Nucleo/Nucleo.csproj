@@ -73,14 +73,20 @@
     <Compile Include="Infra\Criptografia.cs" />
     <Compile Include="Infra\HibernateSession.cs" />
     <Compile Include="Map\HistoricoPrecoMap.cs" />
+    <Compile Include="Map\ProdutoVendaMap.cs" />
+    <Compile Include="Map\VendaMap.cs" />
     <Compile Include="Map\ProdutoMap.cs" />
     <Compile Include="Map\UsuarioMap.cs" />
     <Compile Include="Modelo\HistoricoPreco.cs" />
     <Compile Include="Modelo\Produto.cs" />
+    <Compile Include="Modelo\ProdutoVenda.cs" />
+    <Compile Include="Modelo\Venda.cs" />
     <Compile Include="Modelo\Usuario.cs" />
     <Compile Include="Repository\CrudRepository.cs" />
     <Compile Include="Repository\HistoricoPrecoRepository.cs" />
+    <Compile Include="Repository\ProdutoVendaRepository.cs" />
     <Compile Include="Repository\ProdutoRepository.cs" />
+    <Compile Include="Repository\VendaRepository.cs" />
     <Compile Include="Repository\UsuarioRepository.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

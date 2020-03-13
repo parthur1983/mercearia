@@ -76,3 +76,4 @@ C:\Users\paulo.santana\source\repos\MerceariaSantana\Gerenciador\obj\Debug\Merce
 C:\Users\paulo.santana\source\repos\MerceariaSantana\Gerenciador\obj\Debug\MerceariaSantana.FormProduto.resources
 C:\Users\paulo.santana\source\repos\MerceariaSantana\Gerenciador\obj\Debug\MerceariaSantana.PopupProduto.resources
 C:\Users\paulo.santana\source\repos\MerceariaSantana\Gerenciador\obj\Debug\MerceariaSantana.FormHistoricoPrecos.resources
+C:\Users\paulo.santana\source\repos\MerceariaSantana\Gerenciador\obj\Debug\MerceariaSantana.FormVendas.resources
