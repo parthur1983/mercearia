@@ -25,7 +25,7 @@ namespace Nucleo.Modelo
 
         public virtual string TotalVenda {
             get {
-                return string.Format("{0:C}", ProdutosVenda.Sum(x => x.Valor*x.Qtd));
+                return string.Format("{0:C}", ProdutosVenda.Sum(x => x.TotalValor));
             }
         }
 
